@@ -31,7 +31,10 @@ jobs:
         EOF
 
     - name: Run scraper
-      run: python runner.py
+      env:
+        PYTHONUNBUFFERED: "1"
+      run: python -u runner.py
+
 
     - name: Upload flights.db
       uses: actions/upload-artifact@v4
