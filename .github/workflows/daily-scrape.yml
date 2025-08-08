@@ -1,4 +1,4 @@
-﻿name: Daily Flight Scrape
+name: Daily Flight Scrape
 
 on:
   schedule:
@@ -34,7 +34,7 @@ jobs:
       run: python runner.py
 
     - name: Upload flights.db
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: flights-db
         path: flights.db
