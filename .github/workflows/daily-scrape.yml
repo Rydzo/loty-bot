@@ -41,3 +41,5 @@ jobs:
       with:
         name: flights-db
         path: flights.db
+
+# re-enable scheduled workflow
